@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estúdio Criativo de Webcam</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1> Estúdio Criativo de Webcam</h1>
+
+  <div class="opcoes">
+    <label for="modo">Modo:</label>
+    <select id="modo">
+      <option value="foto">📷 Foto</option>
+      <option value="video">🎥 Vídeo</option>
+    </select>
+
+    <label for="filtro">Filtro:</label>
+    <select id="filtro">
+      <option value="normal">Normal</option>
+      <option value="preto-e-branco">Preto & Branco</option>
+      <option value="sepia">Sépia</option>
+    </select>
+  </div>
+
+  <div class="container">
+    <div>
+      <h2>Ao Vivo</h2>
+      <video id="webcam" width="480" height="360" autoplay muted></video>
+
+      <div class="controles">
+        <button id="ligar">Ligar</button>
+        <button id="capturar">Capturar</button>
+        <button id="desligar">Desligar</button>
+      </div>
+      <p id="feedback"></p>
+    </div>
+
+    <div>
+      <h2>Resultado</h2>
+      <canvas id="tela" width="480" height="360"></canvas>
+
+      <div class="adesivos">
+        <h3>Adesivos</h3>
+        <img src="https://em-content.zobj.net/source/apple/81/hatching-chick_1f423.png" class="adesivo" alt="pintinho">
+        <img src="https://em-content.zobj.net/source/apple/325/ribbon_1f380.png" class="adesivo" alt="laço">
+        <img src="https://em-content.zobj.net/source/apple/81/bouquet_1f490.png" class="adesivo" alt="bigode">
+      </div>
+
+      <button id="baixar" class="btn">Baixar Imagem</button>
+      <video id="gravado" width="480" height="360" controls hidden></video>
+      <button id="downloadVideo" hidden>Baixar Vídeo</button>
+    </div>
+  </div>
+</body>
+</html>
+

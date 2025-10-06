@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Opções de modo e filtro */
+.opcoes {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+  font-size: 1rem;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Contêiner principal */
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Vídeo ao vivo e controles */
+div > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+video {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.controles button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.controles button:hover {
+  background-color: #45a049;
+}
+
+/* Adesivos */
+.adesivos {
+  margin-top: 20px;
+}
+
+.adesivo {
+  width: 50px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.adesivo:hover {
+  transform: scale(1.1);
+}
+
+/* Canvas */
+#tela {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+/* Botão baixar imagem/vídeo */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff5733;
+}
+
+/* Filtros de imagem */
+.preto-e-branco {
+  filter: grayscale(100%);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+/* Feedback */
+#feedback {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
